@@ -5,50 +5,174 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nur Hidayat | Portofolio</title>
   <meta name="description" content="Portofolio Nur Hidayat – Mahasiswa Hukum S1, Universitas Terbuka." />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Panggil file CSS -->
+  <!-- Hubungkan ke CSS eksternal -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="container nav">
-      <a class="logo" href="#top">Nur Hidayat</a>
+      <a class="logo" href="#top" aria-label="Beranda">
+        <span class="logo-mark" aria-hidden="true">
+          <!-- Logo minimal berbentuk timbangan hukum -->
+          <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3l2 3h4v2h-1l-2 4h3a3 3 0 006 0h-6l2-4h-2l-2 4h-2V6h-2v6H8L6 8H4l2 4H0a3 3 0 006 0h3L7 8H6V6h4l2-3z" fill="white"/>
+          </svg>
+        </span>
+        <span>Nur Hidayat</span>
+      </a>
       <nav>
         <a class="link" href="#tentang">Tentang</a>
         <a class="link" href="#pendidikan">Pendidikan</a>
         <a class="link" href="#keahlian">Keahlian</a>
         <a class="link" href="#proyek">Proyek</a>
         <a class="link" href="#kontak">Kontak</a>
+        <a class="cta" href="#cv">Unduh CV</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
+    <!-- HERO -->
     <section class="hero" id="top">
-      <h1>Hai, saya <span style="color:var(--brand-2)">Nur Hidayat</span></h1>
-      <p class="lead">Mahasiswa Hukum S1 – Universitas Terbuka.</p>
+      <div class="hero-card">
+        <span class="eyebrow"><span class="dot"></span> Portofolio</span>
+        <h1>Hai, saya <span style="color:var(--brand-2)">Nur Hidayat</span> 
+          <br>Mahasiswa Hukum S1 – Universitas Terbuka</h1>
+        <p class="lead">Fokus pada <strong>hukum perdata & pidana</strong>, riset kepustakaan, dan penulisan akademik. Saya menyukai analisis kasus, menyusun argumen hukum yang sistematis, serta pengembangan proyek berbasis kebudayaan dan kebhinekaan.</p>
+        <div class="quick">
+          <span class="chip">Legal Research</span>
+          <span class="chip">Penulisan Ilmiah</span>
+          <span class="chip">Analisis Kasus</span>
+          <span class="chip">Publikasi & Dokumentasi</span>
+        </div>
+      </div>
+      <aside class="profile">
+        <div class="avatar" aria-label="Foto Profil (placeholder)">
+          <!-- Placeholder avatar -->
+          <svg viewBox="0 0 120 120" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#16a34a"/>
+                <stop offset="100%" stop-color="#22c55e"/>
+              </linearGradient>
+            </defs>
+            <rect width="120" height="120" rx="28" fill="url(#g)"/>
+            <circle cx="60" cy="46" r="22" fill="rgba(255,255,255,.9)"/>
+            <rect x="22" y="74" width="76" height="30" rx="16" fill="rgba(255,255,255,.9)"/>
+          </svg>
+        </div>
+        <h3>Nur Hidayat</h3>
+        <p>Mahasiswa — Universitas Terbuka</p>
+        <div class="socials" aria-label="Media Sosial">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="X / Twitter">X</a>
+          <a href="#" aria-label="Email">@</a>
+        </div>
+      </aside>
     </section>
 
+    <!-- TENTANG SAYA -->
     <section id="tentang">
-      <h2>Tentang Saya</h2>
-      <p>Saya mahasiswa Hukum S1 di Universitas Terbuka dengan minat di bidang hukum perdata dan pidana.</p>
+      <div class="section-title">
+        <h2>Tentang Saya</h2>
+      </div>
+      <div class="card">
+        <p>Saya adalah mahasiswa program <strong>Hukum S1</strong> di <strong>Universitas Terbuka</strong>. Ketertarikan saya meliputi kajian norma, penafsiran peraturan, serta penerapan hukum dalam kasus nyata. Di luar kampus, saya aktif dalam publikasi dan dokumentasi kegiatan, menyusun laporan, serta pengembangan konten edukasi hukum yang mudah dipahami.</p>
+      </div>
     </section>
 
+    <!-- PENDIDIKAN -->
+    <section id="pendidikan">
+      <div class="section-title">
+        <h2>Pendidikan</h2>
+      </div>
+      <div class="card timeline">
+        <div class="tl-item">
+          <h3>Universitas Terbuka — Hukum (S1)</h3>
+          <p class="muted">Mahasiswa aktif</p>
+          <p>Fokus: Hukum Perdata, Hukum Pidana, Metode Penelitian Hukum, Etika Profesi.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEAHLIAN -->
+    <section id="keahlian">
+      <div class="section-title">
+        <h2>Keahlian</h2>
+      </div>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Riset Hukum</h3>
+          <p class="muted">Analisis peraturan, perbandingan hukum, dan penyusunan tinjauan pustaka.</p>
+        </div>
+        <div class="card">
+          <h3>Penulisan Ilmiah</h3>
+          <p class="muted">Artikel, esai, ringkasan putusan, dan laporan kegiatan.</p>
+        </div>
+        <div class="card">
+          <h3>Publikasi & Dokumentasi</h3>
+          <p class="muted">Konten media sosial, dokumentasi acara, dan penyusunan press release.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYEK -->
+    <section id="proyek">
+      <div class="section-title">
+        <h2>Proyek Terpilih</h2>
+        <a class="link" href="#">Lihat semua →</a>
+      </div>
+      <div class="grid cols-3">
+        <article class="card">
+          <h3>Harmoni dalam Keberagaman</h3>
+          <p class="muted">Laporan kokurikuler berbasis projek mengenai kebhinekaan melalui Tarian Ampar-Ampar Pisang.</p>
+          <p><a class="link" href="#">Baca ringkasan</a></p>
+        </article>
+        <article class="card">
+          <h3>Tinjauan Pustaka Hukum</h3>
+          <p class="muted">Kompilasi literatur terkait asas, teori, dan praktik hukum perdata & pidana.</p>
+          <p><a class="link" href="#">Lihat dokumen</a></p>
+        </article>
+        <article class="card">
+          <h3>Publikasi Kegiatan</h3>
+          <p class="muted">Pengelolaan konten publikasi & dokumentasi untuk kegiatan komunitas/organisasi.</p>
+          <p><a class="link" href="#">Lihat arsip</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERTIFIKAT / PENGHARGAAN (opsional) -->
+    <section id="sertifikat">
+      <div class="section-title">
+        <h2>Sertifikat & Penghargaan</h2>
+      </div>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Pelatihan Metode Penelitian Hukum</h3>
+          <p class="muted">Workshop metodologi riset & sitasi</p>
+        </div>
+        <div class="card">
+          <h3>Konten Edukasi Hukum</h3>
+          <p class="muted">Program literasi hukum untuk pemula</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
     <section id="kontak">
-      <h2>Kontak</h2>
-      <p>Email: <a href="mailto:nurhidayat@example.com">nurhidayat@example.com</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© <span id="y"></span> Nur Hidayat</p>
-  </footer>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+      <div class="section-title">
+        <h2>Kontak</h2>
+      </div>
+      <div class="card">
+        <p>Terbuka untuk kolaborasi riset, penulisan, dan dokumentasi. Silakan hubungi melalui:</p>
+        <ul>
+          <li>Email: <a class="link" href="mailto:nurhidayat@example.com">nurhidayat@example.com</a></li>
+          <li>LinkedIn: <a class="link" href="#">linkedin.com/in/nur-hidayat</a></li>
+          <li>Instagram: <a class="link" href="#">@nurhiday
