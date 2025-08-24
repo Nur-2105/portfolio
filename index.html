@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nur Hidayat | Portofolio</title>
+  <meta name="description" content="Portofolio Nur Hidayat – Mahasiswa Hukum S1, Universitas Terbuka." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Panggil file CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="#top">Nur Hidayat</a>
+      <nav>
+        <a class="link" href="#tentang">Tentang</a>
+        <a class="link" href="#pendidikan">Pendidikan</a>
+        <a class="link" href="#keahlian">Keahlian</a>
+        <a class="link" href="#proyek">Proyek</a>
+        <a class="link" href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="top">
+      <h1>Hai, saya <span style="color:var(--brand-2)">Nur Hidayat</span></h1>
+      <p class="lead">Mahasiswa Hukum S1 – Universitas Terbuka.</p>
+    </section>
+
+    <section id="tentang">
+      <h2>Tentang Saya</h2>
+      <p>Saya mahasiswa Hukum S1 di Universitas Terbuka dengan minat di bidang hukum perdata dan pidana.</p>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <p>Email: <a href="mailto:nurhidayat@example.com">nurhidayat@example.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> Nur Hidayat</p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
