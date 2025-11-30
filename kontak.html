@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontak | Nur Hidayat</title>
+  <meta name="description" content="Hubungi Nur Hidayat" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="Beranda">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3l2 3h4v2h-1l-2 4h3a3 3 0 006 0h-6l2-4h-2l-2 4h-2V6h-2v6H8L6 8H4l2 4H0a3 3 0 006 0h3L7 8H6V6h4l2-3z" fill="white"/>
+          </svg>
+        </span>
+        <span>Nur Hidayat</span>
+      </a>
+      
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="nav-links">
+        <a class="link" href="index.html">Tentang</a>
+        <a class="link" href="pendidikan.html">Pendidikan</a>
+        <a class="link" href="keahlian.html">Keahlian</a>
+        <a class="link" href="proyek.html">Proyek</a>
+        <a class="link" href="sertifikat.html">Sertifikat</a>
+        <a class="link" href="kontak.html">Kontak</a>
+        <a class="cta" href="#" id="download-cv">Unduh CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- KONTAK -->
+    <section id="kontak">
+      <div class="section-title">
+        <h2>Kontak</h2>
+      </div>
+      
+      <div class="card">
+        <p>Silakan hubungi saya melalui formulir di bawah ini atau melalui media sosial yang tertera. Saya akan membalas pesan Anda secepat mungkin.</p>
+        
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+          </div>
+          
+          <div class="form-group full">
+            <label for="subject">Subjek</label>
+            <input type="text" id="subject" required>
+          </div>
+          
+          <div class="form-group full">
+            <label for="message">Pesan</label>
+            <textarea id="message" required></textarea>
+          </div>
+          
+          <div class="submit-btn">
+            <button type="submit" class="cta">Kirim Pesan</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Nur Hidayat. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#kontak" class="back-to-top" aria-label="Kembali ke atas">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 15L12 9L6 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
