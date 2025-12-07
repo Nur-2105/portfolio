@@ -68,7 +68,12 @@
 
       <div class="profile">
         <div class="avatar">
-          <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <!-- Gunakan foto Anda: letakkan file foto di folder yang sama dan ganti 'profile.jpg' jika nama berbeda -->
+          <img src="/175394895.jpeg" alt="Foto Nur Hidayat" 
+            style="width:120px;height:120px;border-radius:50%;object-fit:cover;display:block;"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <!-- Fallback: tampilkan SVG jika gambar gagal dimuat -->
+          <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" style="display:none;">
             <rect width="120" height="120" fill="#1e293b" />
             <circle cx="60" cy="45" r="20" fill="#94a3b8" />
             <path d="M40 90c0-11 8.954-20 20-20s20 9 20 20H40z" fill="#94a3b8" />
